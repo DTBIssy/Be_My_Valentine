@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes bgPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+.main_sect {
+    animation: bgPulse 3s infinite ease-in-out;
+}
+
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #F7F1EB;
+}
+
+.main_sect {
+   width: 100vw;
+   height: 100vh;
+   background: url("image/Valentine_day_Background_1920x 1080.png") no-repeat;
+   background-size: cover
+;
+}
+
+
+.main {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    text-wrap: wrap;
+    /* margin-left: 4vw; */
+}
+
+.slider {
+    font-size: 32px;
+    width: 5px;
+}
+
+.Yes {
+    margin-top: 5vh;
+    margin-right: 2.5vw;
+    margin-left: 4vw;
+    padding: 2.5vh 2.5vw;
+    border-radius: 24px;
+    border: none;
+    background-color: #E54273;
+    color: white;
+
+}
+
+.Yes:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.No {
+    margin-top: 5vh;
+    margin-right: 2.5vw;
+    margin-left: 4vw;
+    padding: 2.5vh 2.5vw;
+    border-radius: 24px;
+    border: none;
+    background-color: #E54273;
+    color: white;
+
+}
+
+.N:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#toggle-music {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    padding: 1vh 2.5vw;
+    border-radius: 24px;
+    border: none;
+    background-color: #E54273;
+    color: white;
+}
+
+#volume-slider {
+position: absolute;
+    bottom: 10%;
+    left: 30%;
+}
